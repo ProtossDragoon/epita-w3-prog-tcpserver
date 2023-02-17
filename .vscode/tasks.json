@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "bc_server 메이크파일 기반 make",
+            "type": "shell",
+            "command": "cd bc_server && make clean && make",
+        },
+        {
+            "label": "echo_server 메이크파일 기반 make",
+            "type": "shell",
+            "command": "cd echo_server && make clean && make echo_test",
+        }
+    ]
+}

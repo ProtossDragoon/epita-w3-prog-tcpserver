@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "bc_server 디버그",
+            "program": "${cwd}/bc_server/main",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "bc_server 메이크파일 기반 make",
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "echo_server 디버그",
+            "program": "${workspaceFolder}/echo_server/echo_test",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "echo_server 메이크파일 기반 make",
+        }
+    ]
+}
