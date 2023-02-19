@@ -7,9 +7,24 @@
             "command": "cd bc_server && make clean && make",
         },
         {
-            "label": "echo_server 메이크파일 기반 make",
+            "label": "echo_server echo_test 메이크파일 기반 make",
             "type": "shell",
             "command": "cd echo_server && make clean && make echo_test",
-        }
+        },
+        {
+            "label": "echo_server single_server 메이크파일 기반 make",
+            "type": "shell",
+            "command": "cd echo_server && make clean && make single_server",
+        },
+        {
+            "label": "echo_server loop_server 메이크파일 기반 make",
+            "type": "shell",
+            "command": "cd echo_server && make clean && make loop_server",
+        },
+        {
+            "label": "echo_server fork_server 메이크파일 기반 make",
+            "type": "shell",
+            "command": "cd echo_server && make clean && make fork_server",
+        },
     ]
 }
