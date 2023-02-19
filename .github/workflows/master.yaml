@@ -1,4 +1,4 @@
-name: 자동 테스팅
+name: 자동 빌드
 
 on:
   push:
