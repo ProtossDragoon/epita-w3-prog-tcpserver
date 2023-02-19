@@ -1,7 +1,7 @@
 CPPFLAGS = -MMD
 CC = gcc
 CFLAGS = -Wall -Wextra -g -fsanitize=address -std=c99
-LDFLAGS = -fsanitize=address -static-libsan
+LDFLAGS = -fsanitize=address -static-libasan
 LDLIBS =
 
 SRC = echo.c echo_test.c single_server.c loop_server.c fork_server.c
