@@ -1,9 +1,11 @@
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <netdb.h>
 #include <unistd.h>
 #include <err.h>
+#include <signal.h>
 #include "echo.h"
 
 struct addrinfo get_server_hints()
