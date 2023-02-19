@@ -1,7 +1,7 @@
 CPPFLAGS = -MMD
 CC = gcc
-CFLAGS = -Wall -Wextra -g -fsanitize=address -std=c99
-LDFLAGS = -fsanitize=address -static-libasan
+CFLAGS = -Wall -Wextra -g -std=c99
+LDFLAGS =
 LDLIBS =
 
 SRC = main.c
