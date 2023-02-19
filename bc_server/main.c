@@ -103,7 +103,7 @@ int main(int argc, char** argv)
     }
 
     // Loop forever
-    printf("Waiting for connections...\n");
+    // printf("Waiting for connections...\n");
     while (1) {
         // Accept an incoming connection
         int cfd = accept(sfd, NULL, NULL);
@@ -116,7 +116,7 @@ int main(int argc, char** argv)
         pid_t pid = fork();
         // Child Process
         if (pid == 0) {
-            printf("New connection (pid = %i)\n", getpid());
+            // printf("New connection (pid = %i)\n", getpid());
             close(sfd); 
             dup2(cfd, 0); // cfd: redirect to the bc STDIN
             dup2(cfd, 1); // cfd: redirect from the bc STDOUT
