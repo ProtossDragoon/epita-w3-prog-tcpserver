@@ -1,0 +1,34 @@
+name: 자동 테스팅
+
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  echo-server:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 체크아웃
+        uses: actions/checkout@v2
+
+      - name: 빌드
+        run: |
+          cd echo_server
+          make
+
+  bc-server:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: 체크아웃
+        uses: actions/checkout@v2
+
+      - name: 빌드
+        run: |
+          cd bc_server
+          make
