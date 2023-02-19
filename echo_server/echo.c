@@ -7,7 +7,7 @@
 
 void rewrite(int fd, const void *buf, size_t count)
 {
-    size_t w = 0;
+    ssize_t w = 0;
     size_t b_left = count - w;
     do {
         w = write(fd, buf, b_left);
@@ -34,7 +34,7 @@ void echo(int fd_in, int fd_out)
     //    ✅ you must send it to fd_out. To do so,
     //    ✅ use the rewrite() function from a previous practical.
     char buffer[BUFFER_SIZE];
-    size_t r = 1;
+    ssize_t r = 1;
     do {
         r = read(fd_in, buffer, BUFFER_SIZE);
         if (r == -1) {
