@@ -1,4 +1,3 @@
-#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -18,7 +17,7 @@ int main(int argc, char **argv)
             err(EXIT_FAILURE, "open()");
 
         echo(fd, STDOUT_FILENO);
-    
+
         close(fd);
     }
 
